@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 html, body {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ html, body {
     height: 100%;
     --base-font-size: 8px;
     --var-color-base: black;
+    
 }
 
 /* FONT */
@@ -83,11 +85,121 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('../img/menuiserie.png');
+    background-image: url('../img/falegname-zanchi-pomezia-005.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20vh;
+    height: 95vh;
+    margin-top: -5%;
 }
+
+.titre{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 300px;
+height: 300px;
+background-color: rgba(222, 184, 135, 0.719);
+font-family: 'Noto Sans JP', sans-serif;
+font-weight: bold;
+font-size: 40px;
+padding: 0 10px;
+border-radius: 100%;
+border: 2px solid white;
+margin: auto;
+color: white;
+
+}
+
+.soustitre{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgba(222, 184, 135, 0.719);
+width: 40%;
+height: 25%;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin: auto;
+padding: 0 20px;
+border-radius: 20px;
+color: white;
+border: 2px solid white;
+margin-top: -2%;
+
+}
+
+#block{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: black;
+width: 100%;
+height: 50%;
+
+}
+
+.titre1{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+width: 100%;
+height: 15%;
+margin-top: -7%;
+font-size: 30px;
+text-align: center;
+font-family: 'Noto Sans JP', sans-serif;
+color: white;
+
+}
+
+.photo{
+
+display: flex;
+flex-direction: column;
+justify-content: left;
+width: 40%;
+height: 70%;
+margin-top: 2%;
+margin-left: 3%;
+border: 3px solid white;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+
+.photo:hover{
+-webkit-transform: scale(1.3);
+transform: scale(1.1);
+}
+
+.texte{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+color: white;
+width: 40%;
+margin-left: 53%;
+margin-top: -20%;
+padding: 15px 15px 15px 15px;
+border-radius: 20px;
+font-family: 'Noto Sans JP', sans-serif;
+text-align: justify;
+
+
+}
+
 
 
 /*SM BREAKPOINT*/
