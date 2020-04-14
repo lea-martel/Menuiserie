@@ -312,7 +312,8 @@ html, body {
 
 .block .description {
     flex: 2;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 15%;
     display: flex;
 }
 
