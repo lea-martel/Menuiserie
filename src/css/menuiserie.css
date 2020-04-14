@@ -1,0 +1,77 @@
+html, body {
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    --base-font-size: 8px;
+    --var-color-base: black;
+}
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+/* NAVIGATOR */
+.nav-bar-top {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    height: 110px;
+}
+.nav-bar-top ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bar-top ul li a {
+    text-decoration: none;
+    color: var(--var-color-base);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.nav-bar-top ul li > * {
+    margin: 0 1rem;
+}
+
+.nav-bar-top ul:nth-child(1) li img {
+    width: 6rem;
+}
+
+.banner-header {
+    background-image: url('../img/banner-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.barre {
+    width: 85%;
+    background-color: black;
+    height: 1px;
+    position: absolute;
+}
+
+/*SM BREAKPOINT*/
+
+@media screen and (max-width:749px) {
+    html {
+        font-size: calc(var(--base-font-size)*1.3);
+    }
+
+}
+
+/*MD BREAKPOINT*/
+
+@media screen and (min-width:750px) and (max-width:1280px) {
+    html {
+        font-size: calc(var(--base-font-size)*1.5);
+    }
+ 
+}
+
+/*LG BREAKPOINT*/
+
+@media screen and (min-width:1280px) {
+    html {
+        font-size: calc(var(--base-font-size)*2);
+    }
+}
+
