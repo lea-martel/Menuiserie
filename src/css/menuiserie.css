@@ -11,6 +11,10 @@ html, body {
 /* FONT */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+/* GENERAL */
+main {
+    margin-top: 9rem;
+}
 /* NAVIGATOR */
 
 .nav-bar-top {
@@ -74,6 +78,18 @@ html, body {
     margin-right: 10%;
 }
 
+/* Presentation */
+#baniere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/menuiserie.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+}
+
+
 /*SM BREAKPOINT*/
 
 @media screen and (max-width:749px) {
@@ -96,14 +112,4 @@ html, body {
     html {
         font-size: calc(var(--base-font-size)*2);
     }
-}
-
-#baniere{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(menuiserie.png);
-    background-size: cover;
-    
-    
 }
