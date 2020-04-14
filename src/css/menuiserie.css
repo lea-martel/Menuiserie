@@ -338,7 +338,73 @@ html, body {
     font-family: 'Noto Sans JP', sans-serif;
     text-align: justify;
 }
+/* FOOTER */
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
 
+footer nav ul div {
+    flex-direction: column;
+}
+
+footer nav ul .link_nav li {
+    text-align: start;
+    line-height: 1.5;
+}
+
+footer nav ul .link_nav li a {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.link_nav li {
+    list-style: none;
+}
+.social-network i {
+    font-size: 2rem;
+    color: gray;
+}
+
+.social-network h3 {
+    font-size: 1rem;
+}
+.social-network {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+}
+
+.footer .social {
+    display: flex;
+    flex-direction: row;
+}
+.footer .contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social div{
+    margin: 0 3rem;
+}
+
+.contact {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+hr {
+    width: 100%;
+}
 /*SM BREAKPOINT*/
 
 @media screen and (max-width:749px) {
