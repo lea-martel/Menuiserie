@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 html, body {
     margin: 0;
     padding: 0;
@@ -202,83 +203,122 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('../img/menuiserie.png');
+    background-image: url('../img/falegname-zanchi-pomezia-005.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20vh;
-    margin-top: 6rem;
-}
-/* FOOTER */
-
-footer {
-    background-color: white;
-    display: flex;
-    justify-content: center;
+    height: 95vh;
+    margin-top: -5%;
 }
 
-footer nav ul div {
-    flex-direction: column;
+.titre{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+width: 300px;
+height: 300px;
+background-color: rgba(222, 184, 135, 0.719);
+font-family: 'Noto Sans JP', sans-serif;
+font-weight: bold;
+font-size: 40px;
+padding: 0 10px;
+border-radius: 100%;
+border: 2px solid white;
+margin: auto;
+color: white;
+
 }
 
-footer nav ul .link_nav li {
-    text-align: start;
-    line-height: 1.5;
+.soustitre{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgba(222, 184, 135, 0.719);
+width: 40%;
+height: 25%;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin: auto;
+padding: 0 20px;
+border-radius: 20px;
+color: white;
+border: 2px solid white;
+margin-top: -2%;
+
 }
 
-footer nav ul .link_nav li a {
-    text-decoration: none;
-    list-style: none;
-    color: gray;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
+#block{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: black;
+width: 100%;
+height: 50%;
+
 }
 
-.social-network i {
-    font-size: 2rem;
-    color: gray;
+.titre1{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+width: 100%;
+height: 15%;
+margin-top: -7%;
+font-size: 30px;
+text-align: center;
+font-family: 'Noto Sans JP', sans-serif;
+color: white;
+
 }
 
-.social-network h3 {
-    font-size: 1rem;
-}
-.social-network {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.footer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 7rem;
+.photo{
+
+display: flex;
+flex-direction: column;
+justify-content: left;
+width: 40%;
+height: 70%;
+margin-top: 2%;
+margin-left: 3%;
+border: 3px solid white;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
 }
 
-.footer .social {
-    display: flex;
-    flex-direction: row;
-}
-.footer .contact div {
-    display: flex;
-    flex-direction: column;
+.photo:hover{
+-webkit-transform: scale(1.3);
+transform: scale(1.1);
 }
 
-.footer .social div{
-    margin: 0 3rem;
+.texte{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: burlywood;
+color: white;
+width: 40%;
+margin-left: 53%;
+margin-top: -20%;
+padding: 15px 15px 15px 15px;
+border-radius: 20px;
+font-family: 'Noto Sans JP', sans-serif;
+text-align: justify;
+
+
 }
 
-.contact {
-    color: gray;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-.link_nav li {
-    list-style: none;
-}
-hr {
-    width: 100%;
-    background-color: gray;
-    height: 1.5px;
-}
+
 
 /*SM BREAKPOINT*/
 
