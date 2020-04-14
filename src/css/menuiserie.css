@@ -69,7 +69,7 @@ html, body {
 }
 
 .barre {
-    width: 85%;
+    width: 87%;
     background-color: var(--var-color-base);
     height: 1px;
     position: absolute;
@@ -79,6 +79,7 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .right-link ul:nth-last-child(1) {
