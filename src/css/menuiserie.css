@@ -294,12 +294,21 @@ hr {
     html {
         font-size: calc(var(--base-font-size)*1.9);
     }
+    .container {
+        margin-top: 150px;
+    }
+    .banner-header {
+        display: none;
+    }
     .content-info .content-description {
         margin: 7rem;
     }
     .content-info {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        align-items: initial;
+
     }
     .image-01 {
         /* background-image: url('../img/kitchen.jpg'); */
