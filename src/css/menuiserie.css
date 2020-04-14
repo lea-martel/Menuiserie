@@ -7,16 +7,15 @@ html, body {
     height: 100%;
     --base-font-size: 8px;
     --var-color-base: black;
-    
+    font-family: 'Lato', sans-serif;
 }
 
 /* FONT */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 /* GENERAL */
-main {
-    margin-top: 9rem;
-}
+
 /* NAVIGATOR */
 
 .nav-bar-top {
@@ -26,6 +25,7 @@ main {
     background-color: white;
     align-items: center;
     height: 110px;
+    z-index: 100;
 }
 
 .nav-bar-top ul {
@@ -40,6 +40,9 @@ main {
     font-size: 1.3rem;
 }
 
+.right-link ul li a:hover {
+    color: gray;
+}
 .nav-bar-top ul li>* {
     margin: 0 1rem;
 }
@@ -60,7 +63,8 @@ main {
 .banner-header div {
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(59, 59, 59);
+    border: 0.5px solid rgb(158, 158, 158);
+    border-bottom: none;
 }
 
 .barre {
@@ -78,6 +82,120 @@ main {
 
 .right-link ul:nth-last-child(1) {
     margin-right: 10%;
+}
+
+/* HOME */
+
+.content-info {
+    display: flex;
+    align-items: center;
+}
+.content-info div img {
+   width: 100%;
+   height: 500px;
+}
+.container-info {
+    width: 100%;
+    margin-top: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-info {
+    text-align: start;
+}
+.content-info p {
+    line-height: 1.8;
+}
+
+.content-info .content-description {
+    margin: 4rem;
+}
+.info {
+    display: flex;
+}
+.image-01 {
+    background-image: url('../img/kitchen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.35s ease-in-out;
+}
+.image-02 {
+    background-image: url('../img/biblio-wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.35s ease-in-out;
+}
+.image-03 {
+    background-image: url('../img/floor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.35s ease-in-out;
+}
+.image-04 {
+    background-image: url('../img/stair.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.35s ease-in-out;
+}
+
+.image-01:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+.image-02:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+.image-03:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+.image-04:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+.content-info div:nth-child(1) {
+    flex: 2;
+}
+.content-info div:nth-child(2) {
+    flex: 1;
+}
+.version-2 div:nth-child(1) {
+    flex: 1;
+}
+.version-2 div:nth-child(2) {
+    flex: 2;
+}
+.title h1 {
+    font-weight: 300;
+    line-height: 0.5;
+}
+.version-1 .title {
+    text-align: end;
+    width: 61%;
+    margin-bottom: 2rem;
+}
+.version-2 .title {
+    text-align: start;
+    margin-left: 39%;
 }
 
 /* Presentation */
@@ -206,7 +324,7 @@ text-align: justify;
 
 @media screen and (max-width:749px) {
     html {
-        font-size: calc(var(--base-font-size)*1.3);
+        font-size: calc(var(--base-font-size)*1.8);
     }
 }
 
@@ -214,7 +332,48 @@ text-align: justify;
 
 @media screen and (min-width:750px) and (max-width:1280px) {
     html {
-        font-size: calc(var(--base-font-size)*1.5);
+        font-size: calc(var(--base-font-size)*1.9);
+    }
+    .content-info .content-description {
+        margin: 7rem;
+    }
+    .content-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-01 {
+        /* background-image: url('../img/kitchen.jpg'); */
+        background-color: green;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55vh;
+
+    }
+    .image-02 {
+        background-image: url('../img/biblio-wall.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55vh;
+    }
+    .image-03 {
+        background-image: url('../img/floor.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 65vh;
+        width: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 0.35s ease-in-out;
+    }
+    .image-04 {
+        background-image: url('../img/stair.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 75vh;
+        width: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        transition: filter 0.35s ease-in-out;
     }
 }
 
