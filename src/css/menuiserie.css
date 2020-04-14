@@ -75,3 +75,12 @@ html, body {
     }
 }
 
+#baniere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(menuiserie.png);
+    background-size: cover;
+    
+    
+    }
