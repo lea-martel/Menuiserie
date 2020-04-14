@@ -6,11 +6,13 @@ html, body {
     height: 100%;
     --base-font-size: 8px;
     --var-color-base: black;
+    font-family: 'Lato', sans-serif;
 }
 
 /* FONT */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 /* GENERAL */
 main {
     margin-top: 9rem;
@@ -38,6 +40,9 @@ main {
     font-size: 1.3rem;
 }
 
+.right-link ul li a:hover {
+    color: gray;
+}
 .nav-bar-top ul li>* {
     margin: 0 1rem;
 }
@@ -58,7 +63,8 @@ main {
 .banner-header div {
     width: 100%;
     height: 100%;
-    border: 1px solid rgb(59, 59, 59);
+    border: 0.5px solid rgb(158, 158, 158);
+    border-bottom: none;
 }
 
 .barre {
@@ -76,6 +82,62 @@ main {
 
 .right-link ul:nth-last-child(1) {
     margin-right: 10%;
+}
+
+/* HOME */
+
+.content-info {
+    display: flex;
+    align-items: center;
+}
+.content-info div img {
+   width: 100%;
+   height: 500px;
+}
+.container-info {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-info {
+    text-align: start;
+}
+.image-01 {
+    background-image: url('../img/kitchen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    width: 100%;
+}
+.image-02 {
+    background-image: url('../img/biblio-wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+    width: 100%;
+}
+.content-info div:nth-child(1) {
+    flex: 2;
+}
+.content-info div:nth-child(2) {
+    flex: 1;
+}
+
+.version-2 div:nth-child(1) {
+    flex: 1;
+}
+.version-2 div:nth-child(2) {
+    flex: 2;
+}
+.title h1 {
+    font-weight: 300;
+    line-height: 0.5;
+}
+.title {
+    width: 300px;
+    text-align: end;
 }
 
 /* Presentation */
