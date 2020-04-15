@@ -351,7 +351,14 @@ html, body {
     margin-top: -2%;
 }
 
-.block {
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(124, 100, 69);
+
+}
+.block-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,6 +366,10 @@ html, body {
 
 }
 
+
+.picture-left {
+    margin-left: 5%;
+}
 .titre1 {
     justify-content: center;
     background-color: burlywood;
@@ -383,18 +394,27 @@ html, body {
 
 .content {
     display: flex;
-
+    margin-bottom: 2rem;
 }
 
-.block .picture-left {
+.block-1 .picture-left {
+    flex: 1.2;
+}
+.block-2 .picture-left {
     flex: 1.2;
 }
 
-.block .description {
+.block-1 .description {
     flex: 2;
     justify-content: flex-end;
-    margin-right: 15%;
     display: flex;
+    margin-right: 10%;
+}
+.block-2 .description {
+    flex: 2;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 10%;
 }
 
 .photo:hover {
@@ -408,7 +428,8 @@ html, body {
     justify-content: center;
     background-color: burlywood;
     color: white;
-    width: 60%;
+    width: 80%;
+    height: auto;
     padding: 15px;
     margin: 0;
     border-radius: 20px;
@@ -417,9 +438,7 @@ html, body {
 }
 
 #block1{
-
     display: flex;
-    flex-direction: column;
     justify-content: center;
     background-color: rgb(85, 72, 54);
     
@@ -444,29 +463,6 @@ transition: .3s ease-in-out;
 
 }
 
-.description1{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 100%;
-margin-left: 30%;
-margin-top: -25%;
-
-}
-
-.texte1{
-
-font-family: 'Noto Sans JP', sans-serif;
-width: 40%;
-text-align: justify;
-background-color: burlywood;
-color: white;
-padding: 15px;
-border-radius: 20px;
-margin-bottom: 8%;
-
-}
 /* CONTACT */
 .left-content {
     border-right: 1px solid gray;
