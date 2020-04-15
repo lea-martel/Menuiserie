@@ -351,19 +351,11 @@ html, body {
     margin-top: -2%;
 }
 
-.block-1 {
+.block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(124, 100, 69);
-
-}
-.block-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(124, 100, 69);
-
 }
 
 
@@ -397,20 +389,11 @@ html, body {
     margin-bottom: 2rem;
 }
 
-.block-1 .picture-left {
-    flex: 1.2;
-}
-.block-2 .picture-left {
+.block .picture-left {
     flex: 1.2;
 }
 
-.block-1 .description {
-    flex: 2;
-    justify-content: flex-end;
-    display: flex;
-    margin-right: 10%;
-}
-.block-2 .description {
+.block .description {
     flex: 2;
     justify-content: flex-end;
     display: flex;
@@ -430,19 +413,13 @@ html, body {
     color: white;
     width: 80%;
     height: auto;
-    padding: 15px;
+    padding: 25px;
     margin: 0;
     border-radius: 20px;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: justify; 
 }
 
-#block1{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(85, 72, 54);
-    
-}
 
 .content1{
 
@@ -684,7 +661,7 @@ hr {
 
 /*MD BREAKPOINT*/
 
-@media screen and (min-width:750px) and (max-width:1280px) {
+@media screen and (max-width:1280px) {
     html {
         font-size: calc(var(--base-font-size)*1.9);
     }
@@ -702,13 +679,6 @@ hr {
         flex-direction: column;
         height: 100%;
         align-items: initial;
-    }
-    .image-01 {
-        /* background-image: url('../img/kitchen.jpg'); */
-        background-color: green;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 55vh;
     }
     .image-02 {
         background-image: url('../img/biblio-wall.jpg');
@@ -743,6 +713,13 @@ hr {
     }
     .left-content form {
         width: 60%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture-left {
+        margin: 3rem 10%;
     }
 }
 
