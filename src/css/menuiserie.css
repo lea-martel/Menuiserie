@@ -632,7 +632,7 @@ hr {
     }
 }
 @media screen and (max-width:800px) {
-    nav ul:nth-child(1) {
+    .nav-bar-top ul:nth-child(1) {
         display: none;
     }
     .right-link {
@@ -715,6 +715,10 @@ hr {
     .picture-left {
         margin: 3rem 10%;
     }
+    .footer .social div {
+        margin: 0 1rem;
+    }
+    
 }
 
 /*LG BREAKPOINT*/
