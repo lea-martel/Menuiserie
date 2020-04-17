@@ -332,7 +332,7 @@ html, body {
     border: 2px solid white;
     margin: auto;
     color: white;
-    margin-top: 9%;
+    margin-top: 11%;
 }
 
 .soustitre {
@@ -357,7 +357,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(124, 100, 69);
+    background-color: blanchedalmond;
 }
 
 .picture-left {
@@ -378,8 +378,15 @@ html, body {
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: filter 0.35s ease-in-out;
 }
-
+.photo:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)   
+    
+    }
 .content {
     display: flex;
     margin-bottom: 2rem;
@@ -434,6 +441,82 @@ transform: scale(1);
 transition: .3s ease-in-out;
 
 }
+#label{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgba(226, 224, 224, 0.246);
+    
+}
+    
+.titrebas{
+    
+color: burlywood;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 35px;
+text-align: center;
+    
+}
+    
+#logo-label{
+    
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 100%;
+margin-bottom: 2%;
+    
+}
+    
+.pic{
+    
+width: 10%;
+    
+}
+
+/* REALISATION */
+
+#baniere-anim{
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-image: url('../img/banner-04.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 95vh;
+
+}
+
+.conteneur{
+max-width: 750px;
+margin: 70px auto;
+}
+
+.diapo{
+
+border: 8px solid burlywood;
+box-shadow: 0px 0px 10px #777;
+width: 100%;
+height: 500px;
+background-size: cover;
+animation: fondu 15s ease-in-out infinite both;
+}
+
+.diapo:hover{
+animation-play-state: paused;  
+}
+    
+@keyframes fondu{
+0%{background-image: url('../img/diapo-01.jpg');}
+33.33%{background-image: url('../img/diapo-02.jpg');}
+55.60%{background-image: url('../img/diapo-06.jpg');}
+66.67%{background-image: url('../img/diapo-05.jpg');}
+100%{background-image: url('../img/diapo-04.jpg');}
+}
+
+
+
 
 /* CONTACT */
 .left-content {
@@ -514,39 +597,6 @@ form {
     margin-top: 5rem;
 }
 
-#label{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-background-color: cornsilk;
-
-}
-
-.titrebas{
-
-color: burlywood;
-font-family: 'Noto Sans JP', sans-serif;
-font-size: 35px;
-text-align: center;
-
-}
-
-#logo-label{
-
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-width: 100%;
-margin-bottom: 2%;
-
-}
-
-.pic{
-
-width: 10%;
-
-}
 
 /* FOOTER */
 footer {
