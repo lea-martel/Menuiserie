@@ -44,6 +44,12 @@ html, body {
 .margin-L-R-10 {
     margin: 0 10%;
 }
+.margin-L-R-7 {
+    margin: 0 7%;
+}
+.margin-L-R-5 {
+    margin: 0 5%;
+}
 /* NAVIGATOR */
 
 .nav-bar-top {
