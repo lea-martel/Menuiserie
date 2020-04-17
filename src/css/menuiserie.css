@@ -550,8 +550,69 @@ animation-play-state: paused;
 100%{background-image: url('../img/diapo-04.jpg');}
 }
 
+.diapo-01 {
+background-image: url('../img/diapo-01.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 55vh;
+width: 100%;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter 0.35s ease-in-out;
+}
 
+.diapo-01:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
 
+.diapo-02 {
+background-image: url('../img/diapo-02.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 55vh;
+width: 100%;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter 0.35s ease-in-out;
+}
+    
+.diapo-02:hover {
+ -webkit-filter: grayscale(0%);
+filter: grayscale(0%)
+    }
+
+.diapo-06 {
+background-image: url('../img/diapo-06.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 55vh;
+width: 100%;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter 0.35s ease-in-out;
+}
+            
+.diapo-06:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%)
+}
+
+.diapo-05 {
+background-image: url('../img/diapo-05.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 55vh;
+width: 70%;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+transition: filter 0.35s ease-in-out;
+}
+                
+.diapo-05:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%)
+}
 
 /* CONTACT */
 .left-content {
