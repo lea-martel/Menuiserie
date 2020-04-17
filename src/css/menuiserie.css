@@ -305,7 +305,7 @@ html, body {
 
 /* Presentation */
 
-.baniere {
+#baniere {
     display: flex;
     background-image: url('../img/banner-02.jpg');
     background-size: cover;
@@ -313,7 +313,7 @@ html, body {
     height: 100vh;
     position: relative;
 }
-.baniere div {
+#baniere div {
     width: 100%;
     height: 100%;
     border: 0.1px solid rgb(255, 255, 255);
@@ -322,18 +322,18 @@ html, body {
     display: flex;
     justify-content: center;
 }
-.baniere div:nth-child(1),
-.baniere div:nth-child(3)  {
+#baniere div:nth-child(1),
+#baniere div:nth-child(3)  {
     border: none;
 }
-.baniere div:nth-child(2) div {
+#baniere div:nth-child(2) div {
     margin-top: -15vh;
     position: absolute;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-.baniere div:nth-child(2) div h1 {
+#baniere div:nth-child(2) div h1 {
     margin-bottom: 0rem;
 }
 #titre {
@@ -492,17 +492,37 @@ width: 10%;
 
 /* REALISATION */
 
-#baniere-anim{
-display: flex;
-flex-direction: column;
-justify-content: center;
-background-image: url('../img/banner-04.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 95vh;
-
+#baniere-realisation {
+    display: flex;
+    background-image: url('../img/banner-04.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
 }
-
+#baniere-realisation div {
+    width: 100%;
+    height: 100%;
+    border: 0.1px solid rgb(255, 255, 255);
+    border-bottom: none;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+#baniere-realisation div:nth-child(1),
+#baniere-realisation div:nth-child(3)  {
+    border: none;
+}
+#baniere-realisation div:nth-child(2) div {
+    margin-top: -15vh;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#baniere-realisation div:nth-child(2) div h1 {
+    margin-bottom: 0rem;
+}
 .conteneur{
 max-width: 750px;
 margin: 70px auto;
@@ -786,8 +806,10 @@ hr {
     .soustitre {
         display: none;
     }
-    .
-    baniere div:nth-child(2) div {
+    #baniere div:nth-child(2) div {
+        margin-top: -30vh;
+    }
+    #baniere-realisation div:nth-child(2) div {
         margin-top: -30vh;
     }
 }
