@@ -559,6 +559,9 @@ animation-play-state: paused;
 .PELTIER-Romuald img {
     width: 450px;
 }
+.PELTIER-Romuald img {
+    border: 1px solid gray;
+}
 
 
 /* CONTACT */
