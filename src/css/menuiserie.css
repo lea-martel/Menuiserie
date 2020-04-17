@@ -38,7 +38,12 @@ html, body {
 .text-align-center {
     text-align: center;
 }
-
+.text-align-start {
+    text-align: start;
+}
+.margin-L-R-10 {
+    margin: 0 10%;
+}
 /* NAVIGATOR */
 
 .nav-bar-top {
@@ -550,7 +555,10 @@ animation-play-state: paused;
 100%{background-image: url('../img/diapo-04.jpg');}
 }
 
-
+/* ENTREPRISE */
+.PELTIER-Romuald img {
+    width: 450px;
+}
 
 
 /* CONTACT */
@@ -715,6 +723,10 @@ hr {
         display: flex;
         flex-direction: column;
     }
+    .PELTIER-Romuald img {
+        width: 100%;
+    }
+    
 }
 @media screen and (max-width:800px) {
     .nav-bar-top ul:nth-child(1) {
