@@ -38,7 +38,12 @@ html, body {
 .text-align-center {
     text-align: center;
 }
-
+.text-align-start {
+    text-align: start;
+}
+.margin-L-R-10 {
+    margin: 0 10%;
+}
 /* NAVIGATOR */
 
 .nav-bar-top {
@@ -545,9 +550,8 @@ animation-play-state: paused;
 @keyframes fondu{
 0%{background-image: url('../img/diapo-01.jpg');}
 33.33%{background-image: url('../img/diapo-02.jpg');}
-55.60%{background-image: url('../img/diapo-06.jpg');}
-66.67%{background-image: url('../img/diapo-05.jpg');}
-100%{background-image: url('../img/diapo-04.jpg');}
+66.67%{background-image: url('../img/diapo-04.jpg');}
+100%{background-image: url('../img/diapo-05.jpg');}
 }
 
 .diapo-01 {
@@ -580,10 +584,10 @@ transition: filter 0.35s ease-in-out;
 .diapo-02:hover {
  -webkit-filter: grayscale(0%);
 filter: grayscale(0%)
-    }
+}
 
-.diapo-06 {
-background-image: url('../img/diapo-06.jpg');
+.diapo-05 {
+background-image: url('../img/diapo-05.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 55vh;
@@ -592,24 +596,24 @@ width: 100%;
 filter: grayscale(100%);
 transition: filter 0.35s ease-in-out;
 }
-            
-.diapo-06:hover {
+                
+.diapo-05:hover {
 -webkit-filter: grayscale(0%);
 filter: grayscale(0%)
 }
 
-.diapo-05 {
-background-image: url('../img/diapo-05.jpg');
+.diapo-04{
+background-image: url('../img/diapo-04.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 55vh;
-width: 70%;
+width: 100%;
 -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
 transition: filter 0.35s ease-in-out;
 }
-                
-.diapo-05:hover {
+                    
+.diapo-04:hover {
 -webkit-filter: grayscale(0%);
 filter: grayscale(0%)
 }
@@ -776,6 +780,10 @@ hr {
         display: flex;
         flex-direction: column;
     }
+    .PELTIER-Romuald img {
+        width: 100%;
+    }
+    
 }
 @media screen and (max-width:800px) {
     .nav-bar-top ul:nth-child(1) {
